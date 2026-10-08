@@ -16,8 +16,8 @@ const config = {
   NEZHA_SERVER: process.env.NEZHA_SERVER || '',       // 哪吒面板地址，v1格式: nezha.xxx.com:8008  v0格式： nezha.xxx.com
   NEZHA_PORT: process.env.NEZHA_PORT || '',           // 哪吒v1请留空，哪吒v0 agent端口
   NEZHA_KEY: process.env.NEZHA_KEY || '',             // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0-agent密钥
-  ARGO_DOMAIN: process.env.ARGO_DOMAIN || 'bot.374307724.kdns.fr',         // argo固定隧道域名,留空即启用临时隧道
-  ARGO_AUTH: process.env.ARGO_AUTH || 'eyJhIjoiOWRkZjkyMWJhMWYzY2U1ZGRjMmIzYTgxODljOGMzYWQiLCJ0IjoiYjQxN2M3YmItY2I3MS00NGFiLTg2MGEtNjFkM2QyNTdlNTQ1IiwicyI6Ik9EQm1PVEZsWWpjdE5XRTFNUzAwWldSakxXRTVZbUl0WldNMk4yVmtOV1UxTXpBMyJ9',             // argo固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
+  ARGO_DOMAIN: process.env.ARGO_DOMAIN || '',         // argo固定隧道域名,留空即启用临时隧道
+  ARGO_AUTH: process.env.ARGO_AUTH || '',             // argo固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
   ARGO_PORT: process.env.ARGO_PORT || '8001',         // argo隧道端口 使用固定隧道token,cloudflare后台设置的端口需和这里对应
   CFIP: process.env.CFIP || 'saas.sin.fan',           // 优选域名或优选ip
   CFPORT: process.env.CFPORT || '443',                // 优选域名或优选ip对应端口
