@@ -12,7 +12,7 @@ const { spawn, execSync } = require('child_process');
 const PORT = process.env.PORT || 3000;           // http 服务
 const SUB_PATH = process.env.SUB_PATH || 'sub';  // 节点订阅token
 const config = {
-  UUID: process.env.UUID || 'a29738e5-bee1-c0fc-b484-ae7c49cbc828',  // 节点UUID，使用哪吒v1时在不不同的平台部署需要修改，否则agent会覆盖
+  UUID: process.env.UUID || 'bd8a827d-a477-4b9b-83be-ce1ee745c2c2',  // 节点UUID，使用哪吒v1时在不不同的平台部署需要修改，否则agent会覆盖
   NEZHA_SERVER: process.env.NEZHA_SERVER || '',       // 哪吒面板地址，v1格式: nezha.xxx.com:8008  v0格式： nezha.xxx.com
   NEZHA_PORT: process.env.NEZHA_PORT || '',           // 哪吒v1请留空，哪吒v0 agent端口
   NEZHA_KEY: process.env.NEZHA_KEY || '',             // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0-agent密钥
